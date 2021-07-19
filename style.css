@@ -1,0 +1,254 @@
+:root{
+	--black: #191414;
+	--green: #1db954;
+	--white: #ffffff;
+	--grey: #989898;
+	}
+
+@font-face {
+	font-family: gothamMax;
+	src: url(font/GothamBold.ttf);
+	}
+@font-face {
+	font-family: gothamMid;
+	src: url(font/GothamMedium.ttf);
+	}
+@font-face {
+	font-family: gothamMin;
+	src: url(font/GothamBook.ttf);
+	}
+html{
+	margin: 0;
+	padding: 0;
+	}
+body{
+	background-color: var(--black);
+	color: var(--white);
+	}
+h1{
+	font-size: 1.5rem;
+	font-family: gothamMax;
+	}
+h2{
+	font-size: 1rem;
+	font-family: gothamMid;
+	}
+p{
+	font-size: 0.8rem;
+	font-family: gothamMin;
+	}
+
+/*Navbar css-----------------------------------------navbar css*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gothamMid;
+} 
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: transparent;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0  50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: var(--grey);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 30px 0 30px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: var(--black);
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: var(--white);
+    font-size: 23px;
+  }
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding: 0 30px;
+  color: #1b1b1b;
+}
+.content div{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/*image---------------------------------------image*/
+#photo{
+	margin: 30px auto 30px;
+	border-radius: 50%;
+	overflow: hidden;
+	width: 150px;
+	}
+#photo-1{
+	width: 100%;
+	}	
+#name{
+	margin: 0 auto;
+	text-align: center;
+	}	
+
+
+/*Playlist----------------------------------------------playlist*/
+#playlist{
+	margin: 60px 0 0;
+	}
+#playlist a{
+	text-decoration: none;
+	}
+#playlist-text{
+	margin: 2rem;
+	color: var(--grey);
+	}
+.play-main-s{
+	width: 90%;
+	background-image: url(img/spotify.jpg);
+	border-radius: 1rem;
+	margin: 2rem auto;
+	padding: 1rem;
+	}
+.play-main-y{
+	width: 90%;
+	background-image: url(img/yt.jpg);
+	border-radius: 1rem;
+	margin: 2rem auto;
+	padding: 1rem;
+	}
+.p-list{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	}
+.p-img{
+	width: 30%;
+	overflow: hidden;
+	}
+.p-img1{
+	width: 100%;
+	margin:  20px 0;
+	border-radius: 2px;
+	}
+.p-details{
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	}
+.p-name{
+	padding: 0.5rem;
+	}
+.p-info{
+	padding: 0.5rem;
+	color: var(--white);
+	font-weight: 600;
+	}
+.play-now{
+	width: 75%;
+	margin: 0.5rem auto;
+	background-color: var(--white);
+	color: var(--black);
+	padding: 5px;
+	text-align: center;
+	border-radius: 10px;
+	}
+/*socials-------------------------------------socials*/
+#social{
+	margin: 60px 0;
+	}
+#social-box{
+	margin: 0 auto;
+	padding: 0.25rem 0;
+	width: 60%;
+	border-radius: 20px;
+	background-color: var(--white);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	}
+.icon{
+	width: 2rem;}
+#fb{
+	width: 1rem;
+	margin: 0 1rem;}
