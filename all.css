@@ -38,6 +38,10 @@ p{
 	font-family: gothamMin;
 	}
 
+a {
+	text-decoration: none;
+	color: var(--white);
+	}
 /*Navbar css-----------------------------------------navbar css*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
@@ -157,103 +161,32 @@ input[type="checkbox"]{
 }
 
 /*image---------------------------------------image*/
-#photo{
+#users{
+	width: 90vw;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	overflow: wrap;
+	justify-content: space-around;
+	}
+.profile{
+	min-width: 150px;
+	margin: 10px 0;}
+.photo{
 	margin: 30px auto 30px;
 	border-radius: 50%;
 	overflow: hidden;
-	width: 150px;
+	width: 100px;
 	}
-#photo-1{
+.photo-1{
 	width: 100%;
 	}	
-#name{
+.name{
+	font-size: 1rem;
 	margin: 0 auto;
 	text-align: center;
 	}	
-
-
-/*Playlist----------------------------------------------playlist*/
-#playlist{
-	margin: 60px 0 0;
+.name h1{
+	font-size: 1rem;
 	}
-#playlist a{
-	text-decoration: none;
-	}
-#playlist-text{
-	margin: 2rem;
-	color: var(--grey);
-	}
-.play-main-s{
-	width: 90%;
-	background-image: url(img/spotify.jpg);
-	border-radius: 1rem;
-	margin: 2rem auto;
-	padding: 1rem;
-	}
-.play-main-y{
-	width: 90%;
-	background-image: url(img/yt.jpg);
-	border-radius: 1rem;
-	margin: 2rem auto;
-	padding: 1rem;
-	}
-.p-list{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	}
-.p-img{
-	width: 30%;
-	overflow: hidden;
-	}
-.p-img1{
-	width: 100%;
-	margin:  20px 0;
-	border-radius: 2px;
-	}
-.p-details{
-	display: flex;
-	flex-direction: column;
-	width: 60%;
-	}
-.p-name{
-	padding: 0.5rem;
-	text-align: center;
-	margin: 0.7rem auto 0;
-	}
-.p-info{
-	padding: 0.5rem;
-	color: var(--white);
-	font-weight: 600;
-	}
-.play-now{
-	width: 75%;
-	margin: 0.5rem auto;
-	background-color: var(--white);
-	color: var(--black);
-	padding: 5px;
-	text-align: center;
-	border-radius: 10px;
-	}
-/*socials-------------------------------------socials*/
-#social{
-	margin: 60px 0;
-	}
-#social-box{
-	margin: 0 auto;
-	padding: 0.25rem 0;
-	width: 60%;
-	border-radius: 20px;
-	background-color: var(--white);
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	}
-.icon{
-	width: 2rem;}
-#fb{
-	width: 1rem;
-	margin: 0 1rem;}
-
-
-
