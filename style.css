@@ -231,9 +231,9 @@ input[type="checkbox"]{
 	margin: 0.5rem auto;
 	background-color: var(--white);
 	color: var(--black);
-	padding: 5px;
+	padding: 10px;
 	text-align: center;
-	border-radius: 10px;
+	border-radius: 15px;
 	}
 /*socials-------------------------------------socials*/
 #social{
